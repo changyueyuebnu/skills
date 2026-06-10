@@ -1,6 +1,6 @@
 # skills
 
-这个仓库收集我自己常用或觉得好用的「技能」（Skill），主要面向 AI 辅助编程、论文写作等场景。每个 skill 是一个 Markdown 文件，描述特定任务的提示词或工作流程。
+这个仓库收集我自己常用或觉得好用的「技能」（Skill），主要面向 AI 辅助编程、论文写作等场景。每个 skill 是一个 Markdown 文件，描述特定任务的提示词或工作流程。我自己用的Claude code + DeepSeek
 
 ## 已有 Skill
 
@@ -12,4 +12,4 @@
   1. 将本仓库克隆到本地。
   2. 在包含 `main.tex` 的目录下，将 `latex-chinese-summary.md` 的内容提供给 AI（例如通过自定义指令或复制对话中）。
   3. AI 根据指令执行：分析 `main.tex` → 提炼中文总结 → 输出至 `template.tex`。
-- **注意**：需要 AI 支持文件读写操作（如 Cursor、Copilot 等可访问工作区文件的工具）。
+- **注意**：需要 AI 支持文件读写操作。
