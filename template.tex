@@ -1,0 +1,94 @@
+\documentclass[UTF8]{ctexart}  % 使用ctexart文档类支持中文
+\usepackage{amsmath, amssymb}  % 数学符号支持
+\usepackage{bm}
+\usepackage{caption}   % 图片标题的排版
+\usepackage{cite}
+\usepackage{color}
+\usepackage{enumitem}  % 自定义列表样式
+\usepackage{fancyhdr}  % 页眉页脚
+\usepackage{geometry}
+\usepackage{graphicx}  % 插入图片
+\usepackage{hyperref}  % 超链接
+%\usepackage{indentfirst}  % 首段缩进
+\usepackage{parskip}       % 用段落间距代替缩进
+\usepackage{setspace}  % 行距设置
+\usepackage{subfig} % 核心包
+\usepackage{tabularx,booktabs} % 需要 tabularx 包
+\usepackage{tikz}
+\usepackage{titlesec}  % 导入 titlesec 宏包，用于自定义标题格式
+\usepackage{braket}
+
+\captionsetup[figure]{skip=10pt} % 调整caption与图片的间距
+\captionsetup{font={stretch=1.2}} % 调整行距因子（1.2倍）
+\geometry{a4paper, margin=2.5cm}
+% 设置 section 左对齐
+% 设置 section 左对齐
+\titleformat{\section}[hang]   % [hang] 设置标题左对齐
+{\normalfont\Large\bfseries}  % 设置标题的字体（这里是默认的加粗大号字体）
+{\thesection}{1em}{}          % 设置 section 编号与标题之间的间距（1em）
+\usepackage[most]{tcolorbox}
+\newtcolorbox{myquote}{colback=gray!10, colframe=gray!80, sharp corners, boxrule=0.5pt, fonttitle=\bfseries}
+\setlength{\parindent}{2em}  % 每段首行缩进2字符
+\setlength{\parskip}{0.5em}  % 段间距
+\linespread{1.5}  % 1.5倍行距
+\usetikzlibrary{shapes, arrows.meta, positioning}
+\setlength{\parindent}{0pt} % 直接取消缩进
+\newcommand{\rmi}{\mathrm{i}}
+\newcommand{\rme}{\mathrm{e}}
+
+% ====================
+% 页眉页脚设置
+% ====================
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{阅读总结0306}
+\fancyfoot[C]{\thepage}
+
+% ====================
+% 正文开始
+% ====================
+\begin{document}
+	
+	% 减少第一页顶部空白
+	\vspace*{-1cm}
+	\begin{figure}[htbp]  % 图片浮动体的位置参数，h表示在此处，t表示顶部，b表示底部，p表示单独一页
+		\centering  % 图片居中
+		\includegraphics[width=1\textwidth]{0306title.png}  % 根据需求可添加期刊截图
+	\end{figure}
+	\href{https://arxiv.org/abs/2603.02308v1}{https://arxiv.org/abs/2603.02308v1}
+
+	\begin{center}
+		{\LARGE \bfseries 2D随机棒Ising模型的低温相变和量子无限随机性} \\[1em]
+	\end{center}
+	
+	% 示例正文
+	\section*{摘要}
+	
+	
+	\begin{minipage}[c]{0.55\textwidth} % 右侧文字区域
+		\vspace{0pt} % 垂直对齐修正
+		\textbf{图表1}\\
+		自旋群和磁群。共线或非共线的例子，补偿或非补偿自旋序，非平庸自旋点群和磁点群。中间的列表示交错磁。
+	\end{minipage}
+	\hspace{0.02\textwidth}
+	\begin{minipage}[c]{0.43\textwidth} % 左侧图片区域
+		\centering
+		\includegraphics[width=\linewidth]{Fig_groups} % 图片宽度自适应
+	\end{minipage}
+	
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=.9\linewidth]{Fig_MnTe_CrSb}
+		\vspace{.2cm}
+		\caption{
+			
+		}
+	\end{figure}
+	
+
+
+	
+\end{document}
+
+
